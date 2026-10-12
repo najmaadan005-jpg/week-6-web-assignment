@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <ul class="nav-links">
+            <li>🏠 Dashboard</li>
+            <li>💰 Expenses</li>
+            <li>📊 Reports</li>
+            <li>🎯 Budget</li>
+            <li>⚙️ Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="header">
+            <h1>Financial Dashboard</h1>
+            <p>Welcome, Najma Nalki!</p>
+        </header>
+
+        <button id="startBtn">Enter My Budget</button>
+
+        <hr>
+
+        <h2>Add Expense</h2>
+
+        <input
+            type="text"
+            id="category"
+            placeholder="Expense Category">
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Amount">
+
+        <button id="addExpenseBtn">
+            Add Expense
+        </button>
+
+        <h3 id="status">No expenses recorded.</h3>
+
+        <h2>Expense Records</h2>
+        <ul id="expenseList"></ul>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Savings</h3>
+                <p>KSh 1050</p>
+                <span>Monthly Savings</span>
+            </div>
+
+            <div class="card">
+                <h3>Utilities</h3>
+                <p>KSh 110</p>
+                <span>Monthly Bills</span>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
